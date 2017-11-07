@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B778A6EE-683F-41BC-AD52-C6CA1F9DBAB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MeteorRush</RootNamespace>
+    <AssemblyName>MeteorRush</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Despre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despre.Designer.cs">
+      <DependentUpon>Despre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI.Designer.cs">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scores.Designer.cs">
+      <DependentUpon>Scores.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Despre.resx">
+      <DependentUpon>Despre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI.resx">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Scores.resx">
+      <DependentUpon>Scores.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipD7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BadBadThing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\167963-backgrounds-page-blog-please-changes-the-space-background-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LiveP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSS8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipsSD2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSD3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSD4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSD5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSD6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSD7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceShipSD8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBoss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Between2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Between1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF4s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalBossF51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstructiuniP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstructiuniP3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstructiuniP2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesprePF.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
